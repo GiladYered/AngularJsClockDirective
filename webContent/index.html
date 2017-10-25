@@ -8,19 +8,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body ng-app="myApp">
-    <div  ng-controller="myCtrl">
-
-
-        <input type="text" ng-model="color" placeholder="Enter a color"/>
-        <p>{{greeting}}</p>
-        <!--Should display: Hello gilad yered, with background color in blue-->
-        <hello-world color="LightBlue" name="Gilad" family="Yered"></hello-world>
-        <hello-world color="LightBlue" name="Yonatan" family="Alon"></hello-world>
-        <h1>{{currTime}}</h1>
-        <angular-js-clock></angular-js-clock>
-    </div>
-    <hello-world color="LightBlue" name="Eddy" family="Goikhman"></hello-world>
-
+<div ng-controller="myCtrl">
+    <h1 style= 'display:inline;  background-color:lightblue';>Time Clock: </h1>
+    <angular-js-clock></angular-js-clock>
+</div>
 
 
 <script src="src/script.js"></script>
